@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
+import image from './assets/tommy-denim__header-men.jpg';
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
           </ul>
          </div>
          <div class="column-left">
-          <img src="logo.png" width="175px"/>
+          <img src={logo} width="175px"/>
          </div>
          <div class="column-right">
            <input type="text" placeholder="Search"/>
@@ -43,7 +44,7 @@ function App() {
            <p>Engineered for perfect form and <br/> exceptional fit - whatever you do <br/> in them.</p>
          </div>
          <div class="column-right-block">
-           <img src="tommy-denim__header-men.jpg" width="100%"/>
+           <img src={image} alt="" width="100%"/>
          </div>
       </div>
       </body>
