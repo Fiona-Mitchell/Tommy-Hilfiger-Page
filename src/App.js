@@ -72,7 +72,14 @@ function App() {
           </svg>
         </div>
       </div>
-    
+      <div class="container-4">
+         <div class="column-left-block"></div>
+         <div class="column-right-block">
+           <div class="arm">
+             <img src={imageArm} alt="" width="100%"/>
+           </div>
+         </div>
+      </div>
       </body>
     </html>
     </div>

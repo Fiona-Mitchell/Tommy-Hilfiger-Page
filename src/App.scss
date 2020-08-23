@@ -149,18 +149,28 @@ img{
 .container-3{
   position: relative;
   width: 900px;
-  margin: 40px auto;
+  margin: 40px 150px;
 }
 
 .column-left-block{
   float: left;
-  width: 25%;
+  width: 150px;
   margin-top: 60px;
   text-transform: uppercase;
 }
 .column-right-block{
   float: right;
-  width: 75%;
+  width: 675px;
+}
+
+.container-4{
+position: absolute;
+top:113px;
+left: 225px;
+}
+
+.arm{
+  position: absolute;
 }
 
 .mini-title{
@@ -211,7 +221,7 @@ img{
 }
 
 .title{
-  margin: auto;
+  margin: 140px;
   width: 925px;
 }
 
