@@ -200,6 +200,63 @@ p{
   animation: fade2 0.75s ease-in-out forwards;
 }
 
+.L-O-V-E{
+  width: 785px;
+  position: absolute;
+  top: 250px;
+  left: 15%;
+}
+
+#heart-shape:hover{
+  fill: #012756;
+  transform: translateX(2px);
+}
+
+#heart-shape{
+  animation: transition-up 1s ease-in-out forwards 1.2s;
+  opacity: 0;
+}
+
+.L{
+  animation: transition-up 1s ease-in-out forwards 1s;
+  opacity: 0;
+}
+
+.V{
+  animation: transition-up 1s ease-in-out forwards 1.4s;
+  opacity: 0;
+}
+
+.E{
+  animation: transition-up 1s ease-in-out forwards 1.6s;
+  opacity: 0;
+}
+
+.dot-one{
+  animation: transition-up 1s ease-in-out forwards 1.8s;
+  opacity: 0;
+}
+
+.L-L-A{
+  animation: transition-up 1s ease-in-out forwards 1.6s;
+  opacity: 0;
+}
+
+.L-L-A-dot{
+  animation: transition-up 1s ease-in-out forwards 1.6s;
+  opacity: 0;
+}
+
+.A-L-A{
+  animation: transition-up 1s ease-in-out forwards 1.8s;
+  opacity: 0;
+}
+
+.A-L-A-dot{
+  animation: transition-up 1s ease-in-out forwards 1.8s;
+  opacity: 0;
+}
+
 @keyframes grow {
   from{
     transform: scaleY(0);
