@@ -6,6 +6,8 @@ import image from './assets/tommy-denim__header-men.jpg';
 function App() {
   return (
     <div className="App">
+
+    <html>
     <head>
     <title>Tommy Hilfiger Denim</title>
 
@@ -37,18 +39,22 @@ function App() {
       </div>
       <div class="container-3">
          <div class="column-left-block">
-           <h2>Spring <br/> 2017</h2>
-           <br/>
+           <div class="mini-title">
+             <h2><span>24/7 LIVE.</span></h2>
+           </div>
+           <h2>Spring <br/><span> 2017</span></h2>
            <h3>With Anwar Hadid <br/> & Sophia Richie</h3>
-           <br/>
-           <p>Engineered for perfect form and <br/> exceptional fit - whatever you do <br/> in them.</p>
+           <p>Engineered for perfect form and exceptional fit - whatever you do in them.</p>
          </div>
          <div class="column-right-block">
            <img src={image} alt="" width="100%"/>
          </div>
       </div>
+      <div class="white-block-1"></div>
+      <div class="white-block-2"></div>
+      <div class="white-block-3"></div>
       </body>
-
+    </html>
     </div>
   );
 }

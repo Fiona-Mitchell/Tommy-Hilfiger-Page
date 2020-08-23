@@ -67,6 +67,27 @@ body{
   color: $color-blue;
 }
 
+h2{
+  font-family: heroic-bold-condensed;
+  font-size: 2em;
+  letter-spacing: 5px;
+
+  span{
+    color: $color-red;
+  }
+}
+
+h3{
+  font-family: heroic-bold-condensed;
+  letter-spacing: 3px;
+}
+
+
+p{
+  font-size: 0.9em;
+  text-transform: none;
+}
+
 .column-left{
   float: left;
   width: 33.333%;
@@ -121,19 +142,89 @@ body{
 }
 
 .container-3{
-  width: 65vw;
+  position: relative;
+  width: 900px;
   margin: 40px auto;
 }
 
 .column-left-block{
   float: left;
-  width: 20%;
-  background-color: blue;
-  margin-top: 350px;
+  width: 25%;
+  margin-top: 100px;
   text-transform: uppercase;
 }
 .column-right-block{
   float: right;
-  width: 80%;
-  background-color: red;
+  width: 75%;
+}
+
+.mini-title{
+  margin-bottom: 225px;
+  transform: scaleY(0);
+  animation: grow 0.5s ease-in-out forwards 1.5s;
+  transform-origin: bottom;
+}
+
+.white-block-1{
+  height: 250px;
+  width: 500px;
+  transform-origin: right;
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+  right: 0px;
+  animation: fade1 1s ease-in-out forwards;
+}
+.white-block-2{
+  height: 50px;
+  width: 500px;
+  transform-origin: right;
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+  right: 0px;
+  top: 350px;
+  opacity: 0.98;
+  animation: fade1 1s ease-in-out forwards;
+}
+
+.white-block-3{
+  height: 400px;
+  width: 350px;
+  transform-origin: right;
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+  right: 0px;
+  top: 400px;
+  animation: fade2 0.75s ease-in-out forwards;
+}
+
+@keyframes grow {
+  from{
+    transform: scaleY(0);
+    opacity: 1;
+  }
+  to{
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade1 {
+  from{
+    transform: scaleX(1);
+  }
+  to{
+    transform: scaleX(0.45);
+  }
+}
+
+@keyframes fade2 {
+  from{
+    transform: scaleX(1);
+  }
+  to{
+    transform: scaleX(0.3);
+  }
 }
