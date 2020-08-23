@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.png';
 import './App.scss';
 import image from './assets/tommy-denim__header-men.jpg';
+import imageArm from './assets/tommy-denim__arm.png';
 
 function App() {
   return (
@@ -42,9 +43,11 @@ function App() {
            <div class="mini-title">
              <h2><span>24/7 LIVE.</span></h2>
            </div>
-           <h2>Spring <br/><span> 2017</span></h2>
-           <h3>With Anwar Hadid <br/> & Sophia Richie</h3>
-           <p>Engineered for perfect form and exceptional fit - whatever you do in them.</p>
+           <div class="collection-text">
+             <h2>Spring <br/><span> 2017</span></h2>
+             <h3>With Anwar Hadid <br/> & Sophia Richie</h3>
+             <p>Engineered for perfect form and exceptional fit - whatever you do in them.</p>
+           </div>
          </div>
          <div class="column-right-block">
            <img src={image} alt="" width="100%"/>
@@ -55,19 +58,21 @@ function App() {
       <div class="white-block-3"></div>
       <div class="title">
         <div class="L-O-V-E">
-          <svg id="Layer_1" x="0" y="0" viewBox="0 0 133.28 89.72" enable-background="new 0 0 133.28 89.72">
-            <path id="heart-shape" fill="#CC1331" d="M53.25 16.53c-1.08-7.82-7.16-9.87-10.33-9.87h-0.01c-3.24-0.28-5.64 1.7-7.1 3.12 -1.44-1.41-3.81-3.4-7.1-3.12H28.7c-3.18 0-9.25 2.04-10.33 9.87 -0.07 0.49-0.55 4.83 2.89 10.2 3.54 5.52 11.46 10.18 13.79 11.16l0.75 0.32 0.75-0.32c2.33-0.98 10.25-5.64 13.79-11.16C53.8 21.36 53.32 17.02 53.25 16.53L53.25 16.53zM46.5 24.66c-2.45 3.82-8.09 7.53-10.74 8.87 -2.65-1.34-8.29-5.05-10.74-8.87 -2.6-4.05-2.2-7.2-2.2-7.2 0.83-6.02 6.44-6.21 6.44-6.21 3.01-0.26 4.87 2.08 5.12 2.41l0.56 0.73 0.87 1.17 0.81-1.12 0.59-0.75c0.16-0.19 1.9-2.62 5.07-2.46 0 0 5.8 0 6.43 6.25C48.72 17.6 49.1 20.61 46.5 24.66L46.5 24.66z"/>
-            <path class="L" fill="#CC1333" d="M1.8 38.35V6.84h5.54v26.28h3.96v5.23H1.8z"/>
-            <path class="V" fill="#CC1333" d="M63.78 6.75h5.93l0.72 11.76 0.74 11.47 0.74-11.47 0.74-11.76h5.54l-3.68 31.51h-6.84L63.78 6.75z"/>
-            <path class="E" fill="#CC1333" d="M95.84 38.35V6.84h10.39v5.23h-4.86v7.69h4.22v5.23h-4.22v8.13h4.86v5.23H95.84z"/>
-            <path class="dot-one" fill="#CC1333" d="M119.21 38.35v-5.76h5.23v5.76H119.21z"/>
-            <path class="L-L-A" fill="#CC1333" d="M52.08 80.18V48.67h5.54v26.28h3.96v5.23H52.08z"/>
-            <path class="L-L-A-dot" fill="#CC1333" d="M72.46 80.27v-5.76h5.23v5.76H72.46z"/>
-            <path class="A-L-A"fill="#CC1333" d="M87.21 80.27l3.65-31.51h7.05l3.65 31.51h-5.54l-0.44-6.13h-2.4l-0.44 6.13H87.21zM93.65 69.33h1.47l-0.18-4.26c-0.26-5.58-0.43-8.94-0.5-10.08h-0.13c-0.03 0.97-0.1 2.57-0.22 4.82 -0.12 2.25-0.21 4-0.26 5.26L93.65 69.33z"/>
-            <path class="A-L-A-dot" fill="#CC1333" d="M111.71 80.27v-5.76h5.23v5.76H111.71z"/>
+        <svg version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 120.45 73.89" enable-background="new 0 0 120.45 73.89">
+            <path id="heart-shape" fill="#CC1331" stroke="#CC1333" stroke-width="0.5" stroke-miterlimit="10" d="M49.56 9.45c-1.01-7.29-6.67-9.19-9.63-9.19h-0.01C36.91 0 34.67 1.84 33.31 3.17 31.97 1.86 29.76 0 26.7 0.26h-0.01c-2.96 0-8.62 1.9-9.63 9.19 -0.06 0.45-0.51 4.5 2.7 9.5 3.3 5.15 10.68 9.48 12.85 10.4l0.7 0.3 0.7-0.3c2.17-0.92 9.55-5.25 12.85-10.4C50.07 13.95 49.62 9.91 49.56 9.45L49.56 9.45zM43.27 17.03c-2.29 3.56-7.54 7.01-10.01 8.26 -2.47-1.25-7.72-4.7-10.01-8.27 -2.42-3.77-2.05-6.71-2.05-6.71 0.77-5.61 6-5.78 6-5.78 2.8-0.24 4.54 1.94 4.77 2.24l0.52 0.68 0.81 1.09 0.75-1.05 0.55-0.7c0.15-0.18 1.77-2.44 4.73-2.29 0 0 5.41 0 5.99 5.82C45.34 10.45 45.69 13.26 43.27 17.03L43.27 17.03z"/>
+            <path class="L" fill="#CC1333" d="M1.63 29.92V0h5.16v24.96h3.68v4.97H1.63z"/>
+            <path class="V" fill="#CC1333" d="M59.37 0.34h5.52l0.67 10.95 0.69 10.69 0.69-10.69 0.69-10.95h5.16l-3.43 29.36H63L59.37 0.34z"/>
+            <path class="E" fill="#CC1333" d="M87.2 29.78V0.42h9.68V5.3h-4.52v7.17h3.93v4.87h-3.93v7.57h4.52v4.87H87.2z"/>
+            <path class="dot-one" fill="#CC1333" d="M108.98 29.78v-5.36h4.87v5.36H108.98z"/>
+
+            <path class="L-L-A" fill="#CC1333" d="M50.81 68.84V39.48h5.16v24.48h3.68v4.87H50.81z"/>
+            <path class="L-L-A-dot" fill="#CC1333" d="M67.46 68.84v-5.36h4.87v5.36H67.46z"/>
+            <path class="A-L-A"fill="#CC1333" d="M80.14 68.84l3.4-29.36h6.57l3.4 29.36h-5.16l-0.41-5.71h-2.23l-0.41 5.71H80.14zM86.14 58.64h1.37l-0.16-3.97c-0.25-5.2-0.4-8.33-0.47-9.4h-0.12c-0.03 0.9-0.1 2.4-0.2 4.49 -0.11 2.1-0.19 3.73-0.25 4.9L86.14 58.64z"/>
+            <path class="A-L-A-dot" fill="#CC1333" d="M101.31 68.84v-5.36h4.87v5.36H101.31z"/>
           </svg>
         </div>
       </div>
+    
       </body>
     </html>
     </div>

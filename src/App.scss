@@ -88,6 +88,11 @@ p{
   text-transform: none;
 }
 
+img{
+  opacity: 0;
+  animation: imageFade 0.5s ease-in-out forwards 0.5s;
+}
+
 .column-left{
   float: left;
   width: 33.333%;
@@ -150,7 +155,7 @@ p{
 .column-left-block{
   float: left;
   width: 25%;
-  margin-top: 100px;
+  margin-top: 60px;
   text-transform: uppercase;
 }
 .column-right-block{
@@ -159,7 +164,7 @@ p{
 }
 
 .mini-title{
-  margin-bottom: 225px;
+  margin-bottom: 270px;
   transform: scaleY(0);
   animation: grow 0.5s ease-in-out forwards 1.5s;
   transform-origin: bottom;
@@ -200,11 +205,20 @@ p{
   animation: fade2 0.75s ease-in-out forwards;
 }
 
+.collection-text{
+  animation: transition-up 1s ease-in-out forwards 0.5s;
+  opacity: 0;
+}
+
+.title{
+  margin: auto;
+  width: 925px;
+}
+
 .L-O-V-E{
-  width: 785px;
+  width: 900px;
   position: absolute;
   top: 250px;
-  left: 15%;
 }
 
 #heart-shape:hover{
@@ -257,6 +271,15 @@ p{
   opacity: 0;
 }
 
+@keyframes imageFade {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
 @keyframes grow {
   from{
     transform: scaleY(0);
@@ -283,5 +306,17 @@ p{
   }
   to{
     transform: scaleX(0.3);
+  }
+}
+
+@keyframes transition-up {
+  from{
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
