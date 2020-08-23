@@ -284,33 +284,34 @@ left: 225px;
 
 .grey-block-1{
   height: 50px;
-  width: 800px;
+  width: 750px;
   transform-origin: right;
   background-color: rgba(0,0,0,0.05);
   z-index: -2;
   position: absolute;
-  right: 150px;
-  top: 930px;
+  right: 225px;
+  top: 900px;
   opacity: 0.98;
   animation: stretch-left 1s ease-in-out forwards;
 }
 
 .grey-block-2{
-  height: 400px;
-  width: 1000px;
+  height: 300px;
+  width: 850px;
   transform-origin: right;
   background-color: rgba(0,0,0,0.05);
   z-index: -2;
   position: absolute;
-  right: 150px;
-  top: 980px;
+  right: 225px;
+  top: 950px;
+  margin-bottom: 100px;
   animation: stretch-left 0.75s ease-in-out forwards;
 }
 
 
 #videoPanel{
   position: absolute;
-  margin: 750px 0 100px 200px;
+  margin: 600px 0 100px 200px;
   z-index: -1;
 }
 

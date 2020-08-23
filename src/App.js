@@ -3,6 +3,9 @@ import logo from './logo.png';
 import './App.scss';
 import image from './assets/tommy-denim__header-men.jpg';
 import imageArm from './assets/tommy-denim__arm.png';
+import play from './assets/play-button-icon.svg';
+import pause from './assets/pause-button-icon.svg';
+import video from './assets/test-video.mp4';
 
 function App() {
   return (
@@ -84,15 +87,15 @@ function App() {
       <div class="grey-block-2"></div>
       <div id="main">
         <div id="videoPanel">
-          <video id="exampleVideo" width="700" src="test-video.mp4"></video>
+          <video id="exampleVideo" width="700" src={video}></video>
           <div id="controls">
             <div class="progress-bar"></div>
             <div class="progress-bar-2"></div>
             <div class="play">
-              <img src="play-button-icon.svg" width="10px"/>
+              <img src={play} width="10px"/>
             </div>
             <div class="pause">
-              <img src="pause-button-icon.svg" width="10px"/>
+              <img src={pause} width="10px"/>
             </div>
           </div>
         </div>
