@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.png';
-import './App.css';
+import './App.scss';
 import image from './assets/tommy-denim__header-men.jpg';
 
 function App() {
