@@ -80,6 +80,23 @@ function App() {
            </div>
          </div>
       </div>
+      <div class="grey-block-1"></div>
+      <div class="grey-block-2"></div>
+      <div id="main">
+        <div id="videoPanel">
+          <video id="exampleVideo" width="700" src="test-video.mp4"></video>
+          <div id="controls">
+            <div class="progress-bar"></div>
+            <div class="progress-bar-2"></div>
+            <div class="play">
+              <img src="play-button-icon.svg" width="10px"/>
+            </div>
+            <div class="pause">
+              <img src="pause-button-icon.svg" width="10px"/>
+            </div>
+          </div>
+        </div>
+      </div>
       </body>
     </html>
     </div>
