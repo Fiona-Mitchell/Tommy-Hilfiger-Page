@@ -6,10 +6,12 @@ import imageArm from './assets/tommy-denim__arm.png';
 import play from './assets/play-button-icon.svg';
 import pause from './assets/pause-button-icon.svg';
 import video from './assets/test-video.mp4';
+import React, { useState } from 'react';
 
 const App = () => {
   const hi = "hi";
   console.log(hi);
+
   return (
     <div className="App">
 
