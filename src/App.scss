@@ -234,7 +234,13 @@ left: 225px;
 #heart-shape:hover{
   fill: #012756;
   stroke: #012756;
-  transform: translateX(2px);
+  transform: translateX(5px);
+}
+
+.move:hover{
+  fill: #012756;
+  stroke: #012756;
+  transform: translateX(5px);
 }
 
 #heart-shape{
