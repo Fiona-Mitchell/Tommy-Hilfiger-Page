@@ -1,16 +1,14 @@
-import React from 'react';
 import logo from './logo.png';
 import './App.scss';
 import image from './assets/tommy-denim__header-men.jpg';
 import imageArm from './assets/tommy-denim__arm.png';
-import play from './assets/play-button-icon.svg';
-import pause from './assets/pause-button-icon.svg';
 import video from './assets/test-video.mp4';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const App = () => {
-  const hi = "hi";
-  console.log(hi);
+
+  const play = require(`./assets/play-button-icon.svg`);
+  const pause = require(`./assets/pause-button-icon.svg`);
 
   return (
     <div className="App">
@@ -74,7 +72,7 @@ const App = () => {
       <div className="title">
         <div className="L-O-V-E">
         <svg version="1.1" id="Layer_1" x="0" y="0" viewBox="0 0 120.45 73.89" enableBackground="new 0 0 120.45 73.89">
-            <path class="move" id="heart-shape" fill="#CC1331" stroke="#CC1333" strokeWidth="0.5" strokeMiterlimit="10" d="M49.56 9.45c-1.01-7.29-6.67-9.19-9.63-9.19h-0.01C36.91 0 34.67 1.84 33.31 3.17 31.97 1.86 29.76 0 26.7 0.26h-0.01c-2.96 0-8.62 1.9-9.63 9.19 -0.06 0.45-0.51 4.5 2.7 9.5 3.3 5.15 10.68 9.48 12.85 10.4l0.7 0.3 0.7-0.3c2.17-0.92 9.55-5.25 12.85-10.4C50.07 13.95 49.62 9.91 49.56 9.45L49.56 9.45zM43.27 17.03c-2.29 3.56-7.54 7.01-10.01 8.26 -2.47-1.25-7.72-4.7-10.01-8.27 -2.42-3.77-2.05-6.71-2.05-6.71 0.77-5.61 6-5.78 6-5.78 2.8-0.24 4.54 1.94 4.77 2.24l0.52 0.68 0.81 1.09 0.75-1.05 0.55-0.7c0.15-0.18 1.77-2.44 4.73-2.29 0 0 5.41 0 5.99 5.82C45.34 10.45 45.69 13.26 43.27 17.03L43.27 17.03z"/>
+            <path className="move" id="heart-shape" fill="#CC1331" stroke="#CC1333" strokeWidth="0.5" strokeMiterlimit="10" d="M49.56 9.45c-1.01-7.29-6.67-9.19-9.63-9.19h-0.01C36.91 0 34.67 1.84 33.31 3.17 31.97 1.86 29.76 0 26.7 0.26h-0.01c-2.96 0-8.62 1.9-9.63 9.19 -0.06 0.45-0.51 4.5 2.7 9.5 3.3 5.15 10.68 9.48 12.85 10.4l0.7 0.3 0.7-0.3c2.17-0.92 9.55-5.25 12.85-10.4C50.07 13.95 49.62 9.91 49.56 9.45L49.56 9.45zM43.27 17.03c-2.29 3.56-7.54 7.01-10.01 8.26 -2.47-1.25-7.72-4.7-10.01-8.27 -2.42-3.77-2.05-6.71-2.05-6.71 0.77-5.61 6-5.78 6-5.78 2.8-0.24 4.54 1.94 4.77 2.24l0.52 0.68 0.81 1.09 0.75-1.05 0.55-0.7c0.15-0.18 1.77-2.44 4.73-2.29 0 0 5.41 0 5.99 5.82C45.34 10.45 45.69 13.26 43.27 17.03L43.27 17.03z"/>
             <path className="L" fill="#CC1333" d="M1.63 29.92V0h5.16v24.96h3.68v4.97H1.63z"/>
             <path className="E" fill="#CC1333" d="M87.2 29.78V0.42h9.68V5.3h-4.52v7.17h3.93v4.87h-3.93v7.57h4.52v4.87H87.2z"/>
             <path className="dot-one" fill="#CC1333" d="M108.98 29.78v-5.36h4.87v5.36H108.98z"/>
@@ -93,12 +91,11 @@ const App = () => {
           <video id="exampleVideo" width="700" src={video}></video>
           <div id="controls">
             <div className="progress-bar"></div>
-            <div className="progress-bar-2"></div>
             <div className="play">
               <img src={play} alt="play-icon" id="playBtn" width="10px"/>
             </div>
             <div className="pause">
-              <img src={pause} alt="pause-icon" width="10px"/>
+              <img src={pause} alt="pause-icon" id="pauseBtn" width="10px"/>
             </div>
           </div>
         </div>
